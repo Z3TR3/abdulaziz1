@@ -87,4 +87,59 @@ li::marker {
     h1 {
         font-size: 1.8rem;
     }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #1E3A8A;
+}
+
+.cv-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #1E3A8A;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1E3A8A;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
